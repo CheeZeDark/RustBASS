@@ -40,7 +40,7 @@ fn main() {
             false, 
             filename.as_ptr(), 
             0, 0, 0, 0, 
-            0x40000 // BASS_UNICODE flag
+            0x4 + 0x40000 // BASS_UNICODE flag
         );
         
         if stream == 0 {
